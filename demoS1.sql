@@ -137,7 +137,7 @@ CREATE TABLE [dbo].[Clientes](
 	[Nombres] [nchar](20) NULL,
 	[Apellidos] [nchar](20) NULL,
 	[Edad] [int] NULL,
-	[Direcci髇] [nchar](50) NULL
+	[Direcci贸n] [nchar](50) NULL
 ) ON [PRIMARY]
 GO
 
@@ -149,11 +149,11 @@ INSERT INTO [dbo].[Clientes]
            ,[Nombres]
            ,[Apellidos]
            ,[Edad]
-           ,[Direcci髇])
+           ,[Direcci贸n])
      VALUES
-           (1, 'Manuel', 'L髉ez', 31, 'Calle Canarios F14'),
-		   (2, 'Diana', 'P閞ez', 25, 'Avenida Los Mayas 201'),
-		   (3, 'Daniel', 'C醨denas', 29, 'Avenida San Pablo 312'),
-		   (4, 'Fabrizio', 'Coral', 21, 'Urbanizaci髇 Monterrey J6')
+           (1, 'Manuel', 'L贸pez', 31, 'Calle Canarios F14'),
+		   (2, 'Diana', 'P茅rez', 25, 'Avenida Los Mayas 201'),
+		   (3, 'Daniel', 'C谩rdenas', 29, 'Avenida San Pablo 312'),
+		   (4, 'Fabrizio', 'Coral', 21, 'Urbanizaci贸n Monterrey J6')
 
 GO
