@@ -11,7 +11,7 @@ GO
 CREATE TABLE [dbo].[Productos](
 	[ID_PRODUCTO] [nchar](4) NOT NULL,
 	[Producto] [nchar](50) NULL,
-	[DescripciÛn] [nchar](200) NULL,
+	[Descripci√≥n] [nchar](200) NULL,
 	[Precio] [money] NULL,
  CONSTRAINT [PK_Productos] PRIMARY KEY CLUSTERED 
 (
@@ -23,14 +23,13 @@ GO
 INSERT INTO [dbo].[Productos]
            ([ID_PRODUCTO]
            ,[Producto]
-           ,[DescripciÛn]
+           ,[Descripci√≥n]
            ,[Precio])
      VALUES
-           ('C001',	'MarÌa Fernanda LÛpez', 'maria.lopez@gmail.com', 987654321),
-           ('C002', 'Jorge RamÌrez', 'jorge.ramirez@outlook.com', 912345678),
-           ('C003', 'Andrea Paredes', 'andrea.paredes@hotmail.com',	998877665),
-           ('C004', 'JosÈ Luis Ch·vez', 'jl.chavez@gmail.com', 955443322),
-           ('C005', 'Fiorella RÌos', 'fiorella.rios@hotmail.com', 964321789)
+           ('P001',	'Xiaomi Power Bank 20000mAh 18W', 'Cargador port√°til de alta capacidad y carga r√°pida', 75.00),
+           ('P002', 'Amazon Echo Dot 5ta Gen', 'Parlante inteligente con Alexa y control de hogar', 219.00),
+           ('P003', 'JBL Partybox Stage 320', 'Parlante Bluetooth potente para fiestas',	2099.00),
+           ('P004', 'Lenovo Aud√≠fonos Bluetooth LP40 Pro', 'Auriculares TWS con buena autonom√≠a y dise√±o compacto', 39.90),
+           ('P005', 'Xiaomi Redmi Buds 6 Play BT5.4', 'Aud√≠fonos inal√°mbricos con 36 horas de bater√≠a', 49.00)
 GO
-
 
