@@ -27,19 +27,25 @@ ALTER TABLE [dbo].[Pedidos] CHECK CONSTRAINT [FK_Pedidos_Clientes]
 GO
 
 
-USE [Tienda]
-GO
+	USE [Tienda]
+	GO
+	
+	INSERT INTO [dbo].[Pedidos]
+	           ([ID_PEDIDO]
+	           ,[ID_CLIENTE]
+	           ,[Fecha])
+	     VALUES
+	           ('PD001', 'C001', '2025-05-21'),
+	           ('PD002', 'C002', '2025-06-23'),
+	           ('PD003', 'C003', '2025-07-01'),
+	           ('PD004', 'C004', '2025-08-13'),
+	           ('PD005', 'C005', '2025-08-25'),
+	           ('PD006', 'C001', '2025-08-25'),
+	           ('PD007', 'C005', '2025-08-26'),
+	           ('PD008', 'C002', '2025-08-26'),
+	           ('PD009', 'C001', '2025-08-26'),
+	           ('PD010', 'C004', '2025-08-28')
+	GO
 
-INSERT INTO [dbo].[Pedidos]
-           ([ID_PEDIDO]
-           ,[ID_CLIENTE]
-           ,[Fecha])
-     VALUES
-           ('PD001', 'C001', '2025-08-15'),
-           ('PD002', 'C002', '2025-08-19'),
-           ('PD003', 'C003', '2025-08-21'),
-           ('PD004', 'C004', '2025-08-25'),
-           ('PD005', 'C005', '2025-08-28')
-GO
 
 
