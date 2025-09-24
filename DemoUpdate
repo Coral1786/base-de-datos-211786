@@ -1,0 +1,7 @@
+
+UPDATE Sales.SalesPerson
+SET Bonus = 0
+WHERE SalesYTD < (
+    SELECT AVG(SalesYTD) 
+    FROM Sales.SalesPerson
+);
