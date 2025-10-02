@@ -12,61 +12,14 @@ BEGIN
 
         INSERT INTO AdventureWorksDW2022.dbo.DimProduct
         (
-            ProductAlternateKey,
-            ProductSubcategoryKey,
-            WeightUnitMeasureCode,
-            SizeUnitMeasureCode,
-            EnglishProductName,
-            SpanishProductName,
-            FrenchProductName,
-            StandardCost,
-            FinishedGoodsFlag,
-            Color,
-            SafetyStockLevel,
-            ReorderPoint,
-            ListPrice,
-            DealerPrice,
-            Size,
-            SizeRange,
-            Weight,
-            DaysToManufacture,
-            ProductLine,
-            Class,
-            Style,
-            ModelName,
-            EnglishDescription,
-            FrenchDescription,
-            StartDate,
-            Status
+            ProductAlternateKey, ProductSubcategoryKey, WeightUnitMeasureCode, SizeUnitMeasureCode, EnglishProductName, SpanishProductName, FrenchProductName,
+            StandardCost, FinishedGoodsFlag, Color, SafetyStockLevel, ReorderPoint, ListPrice, DealerPrice, Size, SizeRange, Weight, DaysToManufacture,
+            ProductLine, Class, Style, ModelName, EnglishDescription, FrenchDescription, StartDate, Status
         )
         VALUES
         (
-            @ProductAlternateKey,
-            1,
-            'LB',
-            'CM',
-            @EnglishProductName,
-            'Producto de prueba',
-            'Produit de test',
-            @StandardCost,
-            1,
-            'Black',
-            500,
-            250,
-            @ListPrice,
-            @ListPrice - 5,
-            'M',
-            'Medium',
-            2.5,
-            3,
-            'S',
-            'H',
-            'U',
-            'Test Model',
-            'English description',
-            'Description en français',
-            GETDATE(),
-            'Current'
+            @ProductAlternateKey, 1, 'LB', 'CM', @EnglishProductName, 'Producto de prueba', 'Produit de test', @StandardCost, 1, 'Black', 500, 250, @ListPrice,
+            @ListPrice - 5, 'M', 'Medium', 2.5, 3, 'S', 'H', 'U', 'Test Model', 'English description', 'Description en français', GETDATE(), 'Current'
         );
 
         COMMIT TRANSACTION;
