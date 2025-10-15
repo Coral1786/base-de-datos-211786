@@ -1,0 +1,8 @@
+SELECT 
+    c.CustomerKey,
+    c.FirstName + ' ' + c.LastName AS CustomerName,
+    COUNT(DISTINCT f.ProductKey) AS ProductsPurchased
+FROM DimCustomer AS c
+INNER JOIN FactInternetSales AS f
+    ON c.CustomerKey = f.CustomerKey
+GROUP BY c.CustomerKey, c.FirstName, c.LastName;
